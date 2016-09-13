@@ -96,4 +96,54 @@ abbr        #include<iostream> int main...
 
 snippet     p
 options     head
-  std::cout << ${0:TARGET} << std::endl;
+    std::cout << ${0:TARGET} << std::endl;
+
+snippet     prell
+options     head
+    typedef long long ll;
+    typedef long double ld;
+
+snippet     fixed
+options     head
+    cout << fixed << setprecision(12);
+
+snippet     vecout
+    for(auto elm : ${0:TARGET}) cout << elm << " "; cout << endl;
+
+snippet     mod7
+options     head
+    const ll mod = 1000000007;
+
+snippet     mod9
+options     head
+    const ll mod = 1000000009;
+
+snippet     d4
+options     head
+    const vector<int> d4x({1, 0, -1, 0});
+    const vector<int> d4y({0, -1, 0, 1});
+
+snippet     d8
+options     head
+    const vector<int> d4x({1, 1, 0, -1, -1, -1, 0, 1});
+    const vector<int> d4y({0, 1, 1, 1, 0, -1, -1, -1});
+
+snippet    faster
+    sync_with_stdio(false);
+    quick_exit(EXIT_SUCCESS);
+
+snippet     prcn
+options     head
+    #include <bits/stdc++.h>
+    #define int long long
+    #define range(i,x,y) i=(x);i<(y);i++
+    #define rep(i,n) for(int i=0,i##_len=n;i<i##_len;i++)
+    #define all(x) begin(x),end(x)
+    #define lim(x,r,l) (r<=x&&x<l)
+    typedef long long ll;
+    typedef long double ld;
+    using namespace std;
+
+    signed main(){
+      ${0:TARGET}
+    }
